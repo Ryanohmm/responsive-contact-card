@@ -1,0 +1,68 @@
+@import './css/reset.css';
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    border: purple;
+    margin: 0;
+}
+
+.profile-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: red;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 90%;
+}
+
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: solid red;
+}
+
+
+.name { border: solid red; font-size: 1.5em; margin: 10px 0; }
+.title { border: solid red; font-size: 1.2em; color: purple; }
+.phone, .company { border: solid red; font-size: 1em; margin-top: 5px; color: purple;}
+
+
+@media (min-width: 500px) {
+    .profile-card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 30px;
+        text-align: left;
+        border: solid grey;
+    }
+
+    .profile-pic {
+        margin-right: 20px;
+        width: 120px;
+        height: 120px;
+        border: solid grey;
+    }
+}
+
+@media (min-width: 768px) {
+    .profile-card {
+        flex-direction: row;
+        justify-content: space-between;
+        border: solid blue;
+    }
+
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+        border: solid blueviolet;
+    }
+}
